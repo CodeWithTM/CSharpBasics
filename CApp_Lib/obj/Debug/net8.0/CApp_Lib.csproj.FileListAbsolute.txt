@@ -1,0 +1,11 @@
+C:\Users\tukar\source\repos\NET_PREP\CApp\CApp_Lib\bin\Debug\net8.0\CApp_Lib.deps.json
+C:\Users\tukar\source\repos\NET_PREP\CApp\CApp_Lib\bin\Debug\net8.0\CApp_Lib.dll
+C:\Users\tukar\source\repos\NET_PREP\CApp\CApp_Lib\bin\Debug\net8.0\CApp_Lib.pdb
+C:\Users\tukar\source\repos\NET_PREP\CApp\CApp_Lib\obj\Debug\net8.0\CApp_Lib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tukar\source\repos\NET_PREP\CApp\CApp_Lib\obj\Debug\net8.0\CApp_Lib.AssemblyInfoInputs.cache
+C:\Users\tukar\source\repos\NET_PREP\CApp\CApp_Lib\obj\Debug\net8.0\CApp_Lib.AssemblyInfo.cs
+C:\Users\tukar\source\repos\NET_PREP\CApp\CApp_Lib\obj\Debug\net8.0\CApp_Lib.csproj.CoreCompileInputs.cache
+C:\Users\tukar\source\repos\NET_PREP\CApp\CApp_Lib\obj\Debug\net8.0\CApp_Lib.dll
+C:\Users\tukar\source\repos\NET_PREP\CApp\CApp_Lib\obj\Debug\net8.0\refint\CApp_Lib.dll
+C:\Users\tukar\source\repos\NET_PREP\CApp\CApp_Lib\obj\Debug\net8.0\CApp_Lib.pdb
+C:\Users\tukar\source\repos\NET_PREP\CApp\CApp_Lib\obj\Debug\net8.0\ref\CApp_Lib.dll
