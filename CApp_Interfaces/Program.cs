@@ -104,6 +104,11 @@ namespace CApp_Interfaces
         public virtual decimal AnnualSalary { get; set; }
         public DateTime JoinDate { get; set; }
 
+        protected Employee()        //Abstract class can have a constrcutor
+        {
+            AnnualSalary = 50000; // Minimum annual salary of every employee
+        }
+
         public virtual string GetBasicInfo()
         {
             return $"{this.Id}{Environment.NewLine}{this.Name}{Environment.NewLine}{this.jobTitle}";
@@ -175,6 +180,7 @@ namespace CApp_Interfaces
     {
         int PersonalAssistId { get; set; }
     }
+
     public class CEO : Manager, ICEO
     {
         public int PersonalAssistId { get; set; }

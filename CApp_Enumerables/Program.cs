@@ -15,9 +15,9 @@ namespace CApp_Enumerables
 
 
 
-                Console.WriteLine(location == null ? "location is null" : location);
-                Console.WriteLine(time == null ? "time is null" : time.ToString());
-            
+            Console.WriteLine(location == null ? "location is null" : location);
+            Console.WriteLine(time == null ? "time is null" : time.ToString());
+
 
             //CSVParser cSVParser = new CSVParser();
             //cSVParser.Main(args);
