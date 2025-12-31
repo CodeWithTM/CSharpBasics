@@ -43,8 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DependencyInversion.cs" />
+    <Compile Include="InterfaceSeg.cs" />
+    <Compile Include="LiskoSubs.cs" />
+    <Compile Include="LiskovPractice.cs" />
+    <Compile Include="OpenClose.cs" />
+    <Compile Include="OpenClosePrac.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SingleRespo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -28,7 +28,7 @@ namespace CApp_AdvFeatures
             return n + summation(n - 1);
         }
 
-        public static void Main(string[] args)
+        public static void Main_(string[] args)
         {
             // Using var
             var number = 5;

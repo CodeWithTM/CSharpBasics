@@ -24,6 +24,7 @@ namespace CApp_AdvFeatures
     internal class Program
     {
         static void Main(string[] args)
+
         {
 
             VolatileKeyword.Main1(args);

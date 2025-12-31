@@ -11,7 +11,9 @@ namespace CApp_SOLID
     {
         static void Main(string[] args)
         {
-            using(FileStream fs = File.OpenRead("C:\\DumpStack.log"))
+            LiskovPractice.TestLiskov();
+
+            using (FileStream fs = File.OpenRead("C:\\DumpStack.log"))
             {
                 byte[] data = new byte[fs.Length];
             }

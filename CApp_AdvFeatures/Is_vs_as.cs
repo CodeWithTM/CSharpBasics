@@ -9,7 +9,7 @@ namespace CApp_AdvFeatures
 {
     internal class Is_vs_as
     {
-        public void Main(string[] args)
+        public void Main_(string[] args)
         {
 
             object obj = 1;

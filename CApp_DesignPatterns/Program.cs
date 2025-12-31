@@ -10,6 +10,7 @@ namespace CApp_DesignPatterns
     {
         static void Main(string[] args)
         {
+            DecoPattern.MainClient();
 
             //we cannot create instance like below
             //SingletonCls singleObj = new SingletonCls();
