@@ -1,0 +1,9 @@
+@CoreWebMinimalAPIs_HostAddress = http://localhost:5188
+
+GET {{CoreWebMinimalAPIs_HostAddress}}/weather/
+Accept: application/json
+
+###
+
+GET {{CoreWebMinimalAPIs_HostAddress}}/
+Accept: application/json
