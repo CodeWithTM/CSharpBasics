@@ -30,7 +30,15 @@ builder.Services.AddControllers(options =>
 
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 
+
+builder.Services.AddSingleton<CsvImportChannel>();
+builder.Services.AddHostedService<CsvImportWorker>();
+
 var app = builder.Build();
+
+
+//builder.Services.AddEndpointsApiExplorer();
+//builder.Services.AddSwaggerGen();
 
 // Configure the HTTP request pipeline.
 

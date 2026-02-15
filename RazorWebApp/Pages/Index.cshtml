@@ -1,0 +1,52 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<link rel="stylesheet" href="~/css/employees.css" />
+
+
+<div class="page">
+    <div class="card">
+        <h2>Add Employee</h2>
+
+        <form method="post" class="form">
+            <div class="form-row">
+                <label>Name</label>
+                <input asp-for="employee.Name" placeholder="Enter full name" />
+            </div>
+
+            <div class="form-row">
+                <label>Email</label>
+                <input asp-for="employee.Email" placeholder="Enter email address" />
+            </div>
+
+            <button type="submit" class="btn">Add Employee</button>
+        </form>
+    </div>
+
+    <div class="card">
+        <h3>Employees</h3>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var emp in Model.employees)
+                {
+                    <tr>
+                        <td>@emp.Name</td>
+                        <td>@emp.Email</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
