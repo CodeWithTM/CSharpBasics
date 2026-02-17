@@ -20,6 +20,8 @@ namespace CApp_Delegates
         {
             try
             {
+                DelegateExample.Main1();
+
                 Events_Delegates events_Delegates = new Events_Delegates();
                 events_Delegates.Main(args);
 
@@ -32,7 +34,10 @@ namespace CApp_Delegates
                 //Creating instance of delegate (like class object)
                 PrintDel del = new PrintDel(p.Print); //instance method
 
+                //Delegate can point to static method as well as an instance method..
 
+                //del = new PrintDel(Program.PrintStatic); //static method
+                //del = new PrintDel(p.Print); // instance method
 
                 //Method invocation using Delegate
                 del("calling instance method using delegate");
@@ -106,6 +111,7 @@ namespace CApp_Delegates
             Console.WriteLine(message);
         }
 
+        //This method cannot be invoked directly from outside of a class..
         private static void PrintStatic(string message)
         {
             Console.WriteLine(message);
@@ -141,7 +147,7 @@ namespace CApp_Delegates
 
         public void PrintScore(PrintDel del)
         {
-            //CANNOT DIRECTLY CALL METHOD DUE TO ITS ACCESS LEVEL
+            //CANNOT DIRECTLY CALL METHOD DUE TO ITS ACCESS LEVEL(private)
             //Program.PrintStatic("student score");
 
             //SO WE WILL MAKE USE OF DELEGATE

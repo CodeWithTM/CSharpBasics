@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CardsApp\CardService.cs" />
+    <Compile Include="CardsApp\DelegateExample.cs" />
     <Compile Include="Events_Delegates.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
