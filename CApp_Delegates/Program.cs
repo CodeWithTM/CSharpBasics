@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CApp_Delegates
 {
-    //Declaring Delegate
+    //Declaring Delegate --
     public delegate void PrintDel(string m);
 
     public delegate int CalcSumDelegate(int a, int b);
