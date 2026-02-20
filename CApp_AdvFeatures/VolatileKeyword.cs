@@ -7,6 +7,36 @@ using System.Threading.Tasks;
 
 namespace CApp_AdvFeatures
 {
+
+    /*
+     volatile tells C#:
+
+    “This variable can change anytime by another thread,
+    so don’t cache it in a register. Always read the latest value from memory.”
+
+    
+    Because in multithreading, this can happen:
+
+        Thread A updates a variable
+
+        Thread B keeps reading an old cached copy
+
+        So Thread B never sees the change
+
+
+
+    Thread 1 -- Thread 1 Cache
+
+    Thread 2 -- Thread 2 Cache
+
+    When your program runs, each CPU core (and each thread running on it) tries to be fast.
+
+    So instead of reading a variable from RAM every time (slow), the CPU may: CPU cache (L1/L2/L3), and/or CPU Register
+
+    So a thread might keep using its own copy of the value (i.e. from its own cache).
+
+    in order to overcome this we make that variable as volatile..
+     */
     internal class VolatileKeyword
     {
         public volatile bool isLock = true;

@@ -73,17 +73,25 @@
     <Compile Include="Collections.cs" />
     <Compile Include="ConstructorOrder.cs" />
     <Compile Include="const_readonly.cs" />
+    <Compile Include="ConversionCastingParsing.cs" />
+    <Compile Include="Conversions.cs" />
+    <Compile Include="CtorOrder.cs" />
     <Compile Include="DI_Prac.cs" />
     <Compile Include="ExceptionHandling.cs" />
     <Compile Include="ExtensionMethods.cs" />
     <Compile Include="GenericsAdvance.cs" />
     <Compile Include="GenericsPractice.cs" />
     <Compile Include="LINQ_Prac.cs" />
+    <Compile Include="NestedClasses.cs" />
     <Compile Include="NullableTypes.cs" />
+    <Compile Include="PrivateCtor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RefOutIn.cs" />
+    <Compile Include="StaticNonStatic.cs" />
+    <Compile Include="StringBuilderCls.cs" />
     <Compile Include="string_String.cs" />
+    <Compile Include="StructClasses.cs" />
     <Compile Include="TypesOfConstructors.cs" />
     <Compile Include="Unity_DI.cs" />
   </ItemGroup>

@@ -9,7 +9,12 @@ namespace CApp_Practice
 {
 
     //INTANCE --> base to derived
+    // instance constructor order is about building the memory .. i.e. creating objects and allocating the memory
+    // so base obj members shud be created before derived obj members (1st Parents then Childrens)
     //STATIC --> derived to base
+    // static constructor order is abot WHO triggered the initilization. Its about Type initialization
+    // new Derived(); 
+    // so in this case Derived type is initilizaed then the Base type
     public class ConstructorOrder
     {
         public void Main()

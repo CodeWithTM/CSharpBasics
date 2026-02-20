@@ -24,7 +24,7 @@ namespace CApp_Interfaces
             Console.WriteLine($"{Brand} calling {number}");
         }
 
-        public abstract void PowerOn();
+        public abstract void PowerOn(); // Abstract method act as an contract, child class must provide implimentation for this..
     }
 
     public class SmartPhone : Phone
@@ -58,11 +58,16 @@ namespace CApp_Interfaces
     public abstract class PhoneCls
     {
         public void Call(string number) { }
+
+        public abstract void PowerOn();
     }
     public class SmartPhoneCls : PhoneCls, ICamera, IGps
     {
         public void TakePhoto() { }
         public void Navigate(string destination) { }
+
+        public override void PowerOn() { }
+ 
     }
 
     // SmartPhoneCls IS-A PhoneCls

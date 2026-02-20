@@ -6,27 +6,26 @@ using System.Threading.Tasks;
 
 namespace CApp_Practice
 {
-    public class MathOp
-    {
-        private int Operator1 { get; set; }
 
-        public MathOp() { }
-        public MathOp(int op1)
-        {
-            Operator1 = op1;
-        }
-
-        public void Increment()
-        {
-            Operator1 = Operator1 + 1;
-        }
-
-    }
 
     internal class const_readonly
     {
+        public static readonly Func<int> myfunc = () => { return 1;  };
+
         //compile time constant
+        //const are implicitly static **
         public const string PROC_NAME = ""; // we must assign a value to const variable, else it will give compile time error
+
+        //So the const value is embedded into the IL. no heap/stack
+
+        //public const int? INT_CONST = 10; // we cannot define nullable types as constant bcoz internally they as Nullable<T>
+
+        //public const Nullable<int> INT = 10;
+        // const in C# is ONLY allowed for built-in primitive compile-time constants
+
+        public const string STR_CONST = "some string";
+        // ALLOWED - Because string is special in C# — it’s treated like a literal constant type even though it’s a reference type.
+
 
         //runtime constant
         public readonly string CONFIG = "appconfig";
@@ -34,6 +33,8 @@ namespace CApp_Practice
 
         //we can define readonly - ONLY at class level, we cannot define it inside a method
         public static readonly int GLOBAL_VAR; // --> 0
+
+        //const variables can be created at method level
 
         public readonly int GLOBAL_VAR_MAX;
 
@@ -51,7 +52,7 @@ namespace CApp_Practice
             GLOBAL_VAR_MAX = initialMaxValue;   // each object/instance copy will hold different value for GLOBAL_VAR_MAX,
                                                 // but it CANNOT be modified once initialized
 
-            
+            //myfunc = () => { return 2; };
         }
 
         static const_readonly()
@@ -63,6 +64,8 @@ namespace CApp_Practice
         }
         public static void MyMain()
         {
+            //myfunc = () => { return 2; };
+
             const double PI = 3.14;
 
             //we cannot modify const / readonly once they are initalized..
@@ -85,5 +88,22 @@ namespace CApp_Practice
             mathOp.Increment();
 
         }
+    }
+
+    public class MathOp
+    {
+        private int Operator1 { get; set; }
+
+        public MathOp() { }
+        public MathOp(int op1)
+        {
+            Operator1 = op1;
+        }
+
+        public void Increment()
+        {
+            Operator1 = Operator1 + 1;
+        }
+
     }
 }

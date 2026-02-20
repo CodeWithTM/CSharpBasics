@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 //smaller to larger datatypes
-// byte --> short --> int --> long --> float --> double
+// byte --> short --> int --> long --> float(single) --> double
 namespace CApp_Practice
 {
     public class A

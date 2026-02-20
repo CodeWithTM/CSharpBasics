@@ -10,6 +10,23 @@ namespace CApp_Practice
         public delegate TResult MyFunc<in T1,in T2, out TResult>(T1 arg1, T2 arg2);
         static void Main(string[] args)
         {
+
+            NestedClasses.MainNC();
+
+            PrivateCtor.MainPriC();
+
+            StaticNonStatic.MainSnS();
+
+            StructClasses.MainStruct();
+
+            ConversionCastingParsing.MainCCP();
+
+            CtorOrder.MainOrder();
+
+            StringBuilderCls.MainSB();
+
+            Conversions.MainConert();
+
             ConstructorOrder constructorOrder = new ConstructorOrder();
             constructorOrder.Main();
 
