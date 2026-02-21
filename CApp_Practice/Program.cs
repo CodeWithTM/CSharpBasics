@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AnotherNS;
+using System;
 using System.Threading;
 
 namespace CApp_Practice
@@ -10,6 +11,24 @@ namespace CApp_Practice
         public delegate TResult MyFunc<in T1,in T2, out TResult>(T1 arg1, T2 arg2);
         static void Main(string[] args)
         {
+            Casting_Conversion castingConversion = new Casting_Conversion();
+            castingConversion.Main();
+
+            A1Modifier a1Modifier = new A1Modifier();
+            a1Modifier.m1();
+
+            DefaultAM defaultAM = new DefaultAM();
+            //defaultAM.M();
+
+            ProtectedDerived protectedDerived = new ProtectedDerived();
+            protectedDerived.M();
+
+            NullableTypes nullableTypes = new NullableTypes();
+            nullableTypes.Main();
+
+            RefVsOut.MainRef();
+
+            RefOutIn.MyMain();
 
             NestedClasses.MainNC();
 

@@ -32,9 +32,9 @@ namespace CApp_Practice
             RefType refType = new RefType();
             refType.MyProperty = p;
 
-            //PrintMemoryAddressOfObject(refType);
+            PrintMemoryAddressOfObject(refType);
             
-            RefM(refType);
+            RefM(ref refType);
 
             int x;
             M1(out x); //even if we initialize some value to x, it will be ignored inside the method..
@@ -45,14 +45,14 @@ namespace CApp_Practice
             return 10;
         }
 
-        public static void RefM(RefType rtype)
+        public static void RefM(ref RefType rtype)
         {
 
-            //rtype = new RefType(); this will still point to same mem location
+            rtype = new RefType();  // this will still point to same mem location
 
             rtype.MyProperty = 100;
 
-            //PrintMemoryAddressOfObject(rtype);
+            PrintMemoryAddressOfObject(rtype);
         }
 
         public static void RefMethod(ref int param1)

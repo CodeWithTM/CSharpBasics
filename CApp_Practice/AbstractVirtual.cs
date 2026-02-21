@@ -25,6 +25,14 @@ namespace CApp_Practice
             ATM atm = new BankATM();
             atm.WithdrawCash();
 
+
+            //is - ASK
+            //as - TRY
+
+            if(atm is BankATM)
+                Console.WriteLine("atm is BankATM");
+
+
             BankATM bATM = atm as BankATM;
             bATM.WithdrawCash();
 

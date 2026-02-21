@@ -88,6 +88,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RefOutIn.cs" />
+    <Compile Include="RefVsOut.cs" />
     <Compile Include="StaticNonStatic.cs" />
     <Compile Include="StringBuilderCls.cs" />
     <Compile Include="string_String.cs" />
